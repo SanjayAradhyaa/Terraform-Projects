@@ -1,4 +1,4 @@
-terraform {
+/*terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
@@ -46,4 +46,4 @@ resource "aws_subnet" "az" {
   # each subnet, using consecutive addresses for each availability zone,
   # such as 10.1.16.0/20 .
   cidr_block = cidrsubnet(aws_vpc.main.cidr_block, 4, count.index+1)
-}
+}*/
